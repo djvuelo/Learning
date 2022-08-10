@@ -17,7 +17,7 @@ int main()
 	
 
 	//printVector(garbageFirst());
-	// usingStdStringAndLiterals();
+	usingStdStringAndLiterals();
 }
 
 std::vector<int> garbageFirst()
@@ -51,6 +51,7 @@ void usingStdStringAndLiterals()
 	test[0] = 'h';
 	test.insert(5, "v4");
 	test += "kek";
+	test += R"(\n\t)";
 
 	std::cout << test;
 }
